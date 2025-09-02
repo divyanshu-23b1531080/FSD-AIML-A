@@ -1,83 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Time Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Class Timetable</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>ABES Engineering College, Ghaziabad <span class="tm-mark">TM</span></h1>
-        <h2>Class Time Table CSE AIML-A</h2>
-    </header>
-    <table>
-        <tr>
-            <th rowspan="2">Period/time</th>
-            <th>Period 1</th>
-            <th>Period 2</th>
-            <th rowspan="7">Recess</th>
-            <th>Period 3</th>
-            <th>Period 4</th>
-            <th rowspan="7">Lunch</th>
-            <th>Period 5</th>
-            <th>Period 6</th>
-            <th>Period 7</th>
-            <th>Period 8</th>
-        </tr>
-        <tr>
-            <th>8:50 - 9:40</th>
-            <th>9:40 - 10:30</th>
-            <th>10:40 - 11:30</th>
-            <th>11:30 - 12:20</th>
-            <th>1:20 - 2:10</th>
-            <th>2:10 - 3:00</th>
-            <th>3:00 - 3:50</th>
-            <th>3:50 - 4:30</th>
-        </tr>
-        <tr>
-            <th>Monday</th>
-            <td colspan="2">DSA</td>
-            <td>DSA</td>
-            <td>BCS054</td>
-            <td>VASS301</td>
-            <td>BCAI501</td>
-            <td colspan="2">QA/LR</td>
-        </tr>
-        <tr>
-            <th>Tuesday</th>
-            <td>BCS501</td>
-            <td>BCS503</td>
-            <td>BCAI501</td>
-            <td>BCS054</td>
-            <td>BCS501</td>
-            <td colspan="2">FSD</td>
-            <td>BCS056</td>
-        </tr>
-        <tr>
-            <th>Wednesday</th>
-            <td>BCS501</td>
-            <td>BCS503</td>
-            <td colspan="2">Domain Training</td>
-            <td>BCS056</td>
-            <td colspan="3">DSA</td>
-        </tr>
-        <tr>
-            <th>Thrusday</th>
-            <td colspan="2">FSD</td>
-            <td colspan="2">BCS553</td>
-            <td colspan="2">VA</td>
-            <td>BCAI501</td>
-            <td>BCS501</td>
-        </tr>
-        <tr>
-            <th>Friday</th>
-            <td>BCS503</td>
-            <td>BCAI501</td>
-            <td colspan="2">BCS551</td>
-            <td>BCS501</td>
-            <td>BCS056</td>
-            <td>BCS503</td>
-            <td>BCS504</td>
-        </tr>
-    </table>
+
+    <div class="timetable-container">
+        <h1>ABES Engineering College, Ghaziabad</h1>
+        <h2>Class Time Table</h2>
+        
+        <div class="info-row">
+            <p><strong>Course:</strong> B.Tech</p>
+            <p><strong>w.e.f:</strong> 22.08.2025</p>
+        </div>
+        
+        <div class="info-row">
+            <p><strong>Semester / Section:</strong> VA</p>
+            <p><strong>Department:</strong> Computer Science & Engg - AI & ML</p>
+            <p><strong>Session:</strong> 2025-26, Odd Semester</p>
+        </div>
+        
+        <div class="info-row">
+            <p><strong>Class Room No:</strong> KC 405</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time / Day</th>
+                    <th>I<br>08:50-09:40</th>
+                    <th>II<br>09:40-10:30</th>
+                    <th>III<br>10:40-11:30</th>
+                    <th>IV<br>11:30-12:20</th>
+                    <th>Lunch<br>12:20-1:10</th>
+                    <th>V<br>01:10-02:00</th>
+                    <th>VI<br>02:00-02:50</th>
+                    <th>VII<br>02:50-03:40</th>
+                    <th>VIII<br>03:40-04:30</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td colspan="3">DSA</td>
+                    <td>BCS504<br>UD</td>
+                    <td rowspan="6" class="lunch-break"></td>
+                    <td>VASS301<br>PR</td>
+                    <td>BCS501<br>AKM</td>
+                    <td colspan="2">QA / LR</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>BCAI501<br>AKM</td>
+                    <td>BCS503<br>SG</td>
+                    <td>BCAI501<br>DA,AKM</td>
+                    <td>BCS504<br>UD</td>
+                    <td>BCS501<br>SN</td>
+                    <td colspan="2">FSD</td>
+                    <td>BCS506<br>SK</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>BCS501<br>SN</td>
+                    <td>BCS501<br>SG</td>
+                    <td colspan="2">Domain Training (Artificial Intelligence) KC405<br>Domain Training (Cloud Computing) KC407<br>Domain Training (Networking) KC408</td>
+                    <td>BCS506<br>SK</td>
+                    <td colspan="3">DSA</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td colspan="2">FSD</td>
+                    <td>BCS553</td>
+                    <td>SG,PR</td>
+                    <td colspan="2">VA</td>
+                    <td>BCS503<br>SG</td>
+                    <td>BCS501<br>SN</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>BCS503<br>SG</td>
+                    <td>BCAI501<br>AKM</td>
+                    <td>BCS553</td>
+                    <td>RB,SN</td>
+                    <td>BCS501<br>SN</td>
+                    <td>BCS506<br>SK</td>
+                    <td>BCAI501<br>AKM</td>
+                    <td>BCS504<br>UD</td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+
 </body>
 </html>
