@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #timer {
+      font-weight: bold;
+      color: darkred;
+    }
+    #moveButton:disabled,
+    #sendMessageButton:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    #messageBar, #recipientBar {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Login</h2>
+  <p>Session expires in: <span id="timer">2:30</span></p>
+
+  <form id="loginForm">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br><br>
+
+    <input type="submit" value="Login">
+  </form>
+
+  <br>
+  <button id="moveButton" disabled>Calculate Data</button>
+  <button id="sendMessageButton" disabled>Send Message</button>
+  <button id="logoutButton">Logout</button>
+
+  <div id="messageBar">
+    <label for="message">Message:</label>
+    <input type="text" id="message">
+  </div>
+
+  <div id="recipientBar">
+    <label for="recipient">Send to:</label>
+    <input type="text" id="recipient">
+  </div>
+
+  <div id="status" style="margin-top: 20px;"></div>
+
+  <script src="../javascript/sync.js"></script>
+</body>
+</html>
