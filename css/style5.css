@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+.container{ 
+    /* width: 100vh; */
+    height: 100vh;
+    
+
+}
+.header{
+    height: 10%;
+  background-color: aqua;
+}
+.menu{
+    height: 85%;
+    display: flex;
+}
+.left{
+    background-color: aquamarine;
+    width: 15%;
+}
+.right{
+width: 85%;
+background-color: bisque;
+}
+.footer{
+    height: 5%;
+    background-color: blueviolet;
+}

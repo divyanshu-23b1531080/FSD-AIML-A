@@ -1,0 +1,9 @@
+th,td,table{
+    border: 2px solid black;
+    border-collapse: collapse;
+   
+}
+.lunch{
+    rotate: -90deg;
+    font-size: 20px;
+}

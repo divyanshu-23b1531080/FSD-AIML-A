@@ -1,0 +1,37 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 10px;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border: 2px solid green;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: inline; */
+}
+.container{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2:hover{
+    background-color: yellow;
+    transform: rotate(360deg);
+    scale: 1.5;
+    transition: 2s;
+}
